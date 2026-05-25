@@ -1,0 +1,81 @@
+simperpus-laravel/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── Admin/
+│   │   │   │   ├── BookController.php
+│   │   │   │   ├── MemberController.php
+│   │   │   │   └── BorrowingController.php
+│   │   │   ├── Auth/
+│   │   │   │   └── (dari Breeze)
+│   │   │   ├── BookController.php          ← Untuk Anggota
+│   │   │   ├── BorrowingController.php     ← Untuk Anggota
+│   │   │   └── DashboardController.php
+│   │   └── Middleware/
+│   │       └── IsAdmin.php
+│   ├── Models/
+│   │   ├── Book.php
+│   │   ├── Borrowing.php
+│   │   └── User.php
+│   └── Providers/
+│       └── AppServiceProvider.php
+│
+├── bootstrap/
+├── config/
+├── database/
+│   ├── factories/
+│   ├── migrations/
+│   │   ├── 2026_05_25_000001_create_books_table.php
+│   │   ├── 2026_05_25_000002_create_borrowings_table.php
+│   │   └── ...
+│   └── seeders/
+│       ├── BookSeeder.php
+│       ├── UserSeeder.php
+│       └── DatabaseSeeder.php
+│
+├── public/
+│   ├── css/
+│   ├── js/
+│   └── images/
+│       └── posters/          ← Untuk cover buku (opsional)
+│
+├── resources/
+│   ├── css/
+│   ├── js/
+│   └── views/
+│       ├── admin/
+│       │   ├── books/
+│       │   │   ├── index.blade.php
+│       │   │   ├── create.blade.php
+│       │   │   ├── edit.blade.php
+│       │   │   └── show.blade.php
+│       │   ├── members/
+│       │   ├── borrowings/
+│       │   └── dashboard.blade.php
+│       ├── auth/                    ← Dari Breeze
+│       ├── books/
+│       │   ├── index.blade.php
+│       │   └── show.blade.php
+│       ├── borrowings/
+│       │   ├── index.blade.php      ← Riwayat peminjaman anggota
+│       │   └── create.blade.php     ← Form pinjam buku
+│       ├── layouts/
+│       │   ├── app.blade.php
+│       │   └── admin.blade.php
+│       ├── dashboard.blade.php
+│       └── welcome.blade.php
+│
+├── routes/
+│   ├── web.php
+│   └── api.php (opsional)
+│
+├── storage/
+├── tests/
+├── .env.example
+├── .gitignore
+├── artisan
+├── composer.json
+├── package.json
+├── README.md
+├── tailwind.config.js
+└── vite.config.js
